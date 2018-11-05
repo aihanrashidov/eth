@@ -92,7 +92,7 @@ defmodule ETH.Transaction.Builder do
     gas_price = Map.get(params, :gas_price, ETH.gas_price!())
     data = Map.get(params, :data, "")
     nonce = Map.get(params, :nonce, generate_nonce(Map.get(params, :from)))
-    chain_id = Map.get(params, :chain_id, 3)
+    # chain_id = Map.get(params, :chain_id, 3)
 
     # gas_limit =
     #   Map.get(
